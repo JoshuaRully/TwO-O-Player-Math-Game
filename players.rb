@@ -5,7 +5,7 @@
 # track name later on?
 
 class Players
-  attr_accessor :lives, :name
+  attr_reader :lives, :name
 
   def initialize (name, lives = 3)
     @name = name

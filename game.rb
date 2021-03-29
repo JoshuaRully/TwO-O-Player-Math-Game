@@ -16,7 +16,7 @@ class Game
   end
 
   def  start
-    puts "New Game Started... Welcome #{@player_1} and #{@player_2}."
+    puts "New Game Started... Welcome #{@player_1.name} and #{@player_2.name}."
   end
 
 
