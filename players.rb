@@ -11,6 +11,7 @@ class Players
     @lives = lives
   end
 
+  # make this a private/read only method?
   def alive?
     @lives > 0
   end
