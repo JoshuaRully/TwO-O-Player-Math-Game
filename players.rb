@@ -14,8 +14,8 @@ class Players
     @lives -= 1
   end
 
-  def alive?
-    @lives > 0
+  def dead?
+    @lives == 0
   end
 
   def new_question
