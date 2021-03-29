@@ -2,22 +2,32 @@
 
 # track lives here
 
-# track name later on?
-
 class Players
   attr_reader :lives, :name
 
-  def initialize (name, lives = 3)
+  def initialize (name)
     @name = name
-    @lives = lives
+    @lives = 3
   end
 
-  # make this a private/read only method?
+  def lose_life
+    @lives -= 1
+  end
+
   def alive?
     @lives > 0
   end
-end
 
-# tests below
-# jimbo = Players.new
-# puts jimbo.lives
+  def new_question
+    new_question = Robot.new
+    new_question.question(name)
+    print '> '
+    @user_answer = $stdin.gets.chomp
+    if new_question.answer?(@user_answer.to_i)
+      puts "Nice! You're correct :)"
+    else
+      puts 'Wrong!'
+      lose_life
+    end
+  end
+end
