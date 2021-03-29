@@ -24,7 +24,7 @@ class Game
 
   def winner(player)
     puts "#{player.name} wins with a score of #{player.lives}/3"
-    puts '---------GAME-OVER--------'
+    puts '~~~~~~~~~GAME-OVER~~~~~~~~'
     puts 'Goodbye!'
     exit(0)
   end
@@ -35,7 +35,7 @@ class Game
     @player_2.new_question
     check_lives
     show_lives
-    puts '---------NEW-TURN---------'
+    puts '~~~~~~~~~NEW-TURN~~~~~~~~~'
     turn
   end
 end

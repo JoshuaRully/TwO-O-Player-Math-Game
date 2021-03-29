@@ -18,7 +18,7 @@ class Players
     new_question = Robot.new
     new_question.question(name)
     print '> '
-    @user_answer = $stdin.gets.chomp
+    @user_answer = gets.chomp
     if new_question.answer?(@user_answer.to_i)
       puts "Nice! You're correct :)"
     else
