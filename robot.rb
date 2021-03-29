@@ -1,13 +1,3 @@
-# game logic in here
-
-# simple math questions using RNG for nums 1-20 !!!
-
-# store player scores
-
-# puts for player scores and current player turn
-
-# welcome and goodbye msgs
-
 class Robot
   def initialize()
     @num1 = rand(1...20)

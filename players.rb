@@ -1,7 +1,3 @@
-# cool stuff will be made here
-
-# track lives here
-
 class Players
   attr_reader :lives, :name
 
