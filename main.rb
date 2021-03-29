@@ -1,1 +1,6 @@
-# cool stuff will eventually be required here
+require "./players"
+require "./robot"
+
+# tests below
+jimbo = Players.new
+puts jimbo.lives
